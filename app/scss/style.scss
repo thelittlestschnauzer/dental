@@ -4,6 +4,25 @@
 @import "typography";
 
 
+nav {
+  box-shadow: 5px 5px 10px $ltGray;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: $dkGray;
+  &:hover {
+    color: $green;
+    transform: all 0.5s;
+  }
+}
+
+.navbar-brand {
+  color: $brightBlue !important;
+  letter-spacing: 0.1em;
+}
+
+
 @media only screen and (max-width: 576px) {
 
 }
@@ -25,5 +44,44 @@
 // Desktop Styles 
 
 @media only screen and (min-width: 1025px) {
-
+  .navbar-collapse ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    letter-spacing: 0.1em;
+    opacity: 0.5;
+    &:hover {
+      color: $dkGray !important;
+      font-weight: 600;
+    }
+  }
+  
+  .appointment {
+    background: $brightBlue;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    &:hover {
+      background-color: $royalBlue;
+      transition: all 0.5s;
+    }
+  }
+  .appointment a {
+    text-transform: uppercase !important;
+    color: $white;
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 2px;
+    &:hover {
+      text-decoration: none;
+      background-color: $royalBlue;
+      transition: all 0.5s;
+    }
+  }
 }
