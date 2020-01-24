@@ -2,3 +2,28 @@
 @import "colors";
 @import "global";
 @import "typography";
+
+
+@media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-appointment-btn {
+    display: none;
+  }
+}
+
+//  Tablet Styles
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-appointment-btn {
+    display: none;
+  }
+}
+
+// Desktop Styles 
+
+@media only screen and (min-width: 1025px) {
+
+}
