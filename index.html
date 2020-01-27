@@ -19,36 +19,89 @@
 
         
         <!-- CSS File -->
-        <link rel="stylesheet" href="dist/style.css?cb=1579830954740">
+        <link rel="stylesheet" href="dist/style.css?cb=1580162095868">
     </head>
     <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">DENTAL</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+        <a class="navbar-brand font-weight-bold" href="#">DENTAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Active</a>
+        <div id="navbarContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <!-- Megamenu-->
+            <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Services</a>
+              <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                <div class="container">
+                  <div class="row bg-white rounded-0 m-0 shadow-sm">
+                    <div class="col-lg-7 col-xl-8">
+                      <div class="p-4">
+                        <div class="row">
+                          <div class="col-lg-6 mb-4">
+                            <h6 class="font-weight-bold text-uppercase">General Dentistry</h6>
+                            <ul class="list-unstyled">
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0">Fillings</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Crowns</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Root Canals</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Bridges</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <h6 class="font-weight-bold text-uppercase">Cosmetic Dentistry</h6>
+                            <ul class="list-unstyled">
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Veneers</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Crowns</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Teeth Whitening</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Botox</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <h6 class="font-weight-bold text-uppercase">Surgical Dentistry</h6>
+                            <ul class="list-unstyled">
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">TMJ/TMD Treatment</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Botox</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">All-on-X</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Wisdom Teeth Removal</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 mb-4">
+                            <h6 class="font-weight-bold text-uppercase">MegaMenu heading</h6>
+                            <ul class="list-unstyled">
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Unique Features</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Image Responsive</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Auto Carousel</a></li>
+                              <li class="nav-item"><a href="" class="nav-link text-small pb-0 ">Newsletter Form</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Disabled</a>
-            </li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Team</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Mission</a></li>
+            <li class="nav-item"><a href="" class="nav-link font-weight-bold text-uppercase">Contact</a></li>
           </ul>
         </div>
-        <div class="appointment">
-         <a href="#" class="nav-appointment-btn justify-content-end">Make an Appointment</a>
-        </div>
       </nav>
+      
+      <main>
+        <!-- <section class="hero-section" id="hero">
+          <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+          </div>
+        </section> -->
 
+      </main>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -57,6 +110,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <!-- JavaScript File -->
-        <script src="dist/all.js?cb=1579830954740"></script>
+        <script src="dist/all.js?cb=1580162095868"></script>
     </body>
 </html>
