@@ -11,15 +11,39 @@ nav {
 .nav-link {
   text-transform: uppercase;
   color: $dkGray;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.1em;
+  margin-right: 10px;
+  margin-left: 10px;
   &:hover {
-    color: $green;
+    color: $black;
     transform: all 0.5s;
+    font-weight: bold;
   }
 }
 
 .navbar-brand {
-  color: $brightBlue !important;
+  color: $dkGray !important;
   letter-spacing: 0.1em;
+}
+.navbar-brand:hover {
+  color: #de546e !important;
+  font-weight: bold;
+  transition: all ease 0.4s;
+}
+
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: $ltGray;
+  width: 100%;
+}
+
+.megamenu .menu-header {
+  color: $dkGray;
+  letter-spacing: 0.05em;
 }
 
 
@@ -44,44 +68,256 @@ nav {
 // Desktop Styles 
 
 @media only screen and (min-width: 1025px) {
-  .navbar-collapse ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
-    letter-spacing: 0.1em;
-    opacity: 0.5;
-    &:hover {
-      color: $dkGray !important;
-      font-weight: 600;
+  
+    
+    .megamenu {
+      position: static;
+    }
+    .megamenu .dropdown-menu {
+      background: $white;
+      border: none;
+      width: 100%;
+    }
+    .navbar-brand {
+      margin-left: 20px;
+    }
+
+    .appointment-btn {
+      color: #494949;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #fff;
+      padding: 20px;
+      display: inline-block;
+      transition: all 0.4s ease 0s;
+      &:hover {
+        color: #fff !important;
+        background: #de546e;
+        border-color: #de546e !important;
+        transition: all 0.4s ease 0s;
+      }
+    }
+
+    .bg {
+      background-image: url(/app/images/women-big-smile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left 100%;
+      height: 100vh;
+      width: 100vw !important;
+      margin: 0 !important;
+    }
+
+    .hero-container {
+      position: absolute;
+      height: 100vh;
+      top: 40%;
+      left: 64%;
+    }
+    .hero-container h1 {
+      color: #494949;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .hero-container p {
+      color: #494949;
+      font-family: 'Playfair', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      letter-spacing: 0.1em;
+    }
+    .hero-container .btn-started {
+      background: #de546e;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      letter-spacing: 0.2em;
+      padding: 20px;
+      border-radius: 6px;
+      transition: all 0.3s ease 0;
+    }
+
+    .btn-started:hover {
+      color: #494949;
+      font-weight: 900 !important;
+      letter-spacing: 3px;
+      background: none;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.3s wase 0s;
+    }
+
+    .dropdown-menu {
+      left: 20%;
+    }
+
+    // schedule section 
+
+    .schedule-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    // text-column 
+     .schedule-header {
+      font-size: 30px;
+      font-style: italic;
+      margin-bottom: 24px;
+      color: #494949;
+    }
+
+    .text-list  {
+      list-style: none;
+      padding: 0px !important;
+    }
+
+    ul.text-list h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+      color: #666;
+      font-size: 18px;
+    }
+
+    ul li strong {
+      margin-right: 3px;
+    }
+
+    .text-list .fas {
+      padding-left: 10px;
+    }
+
+    .call-us {
+      font-size: 20px;
+    }
+
+    // form styles
+
+    .card-form {
+      border-radius: 10px;
+      width: 100%;
+      display: table;
+      box-shadow: 0 8px 20px 0 rgba(0,0,0,.15);
+      background: #3667a7;
+      margin-bottom: 3.093%;
+    }
+
+    .card {
+      overflow: hidden;
+      background: #3667a7;
+    }
+
+    .card-form .card-body {
+      display: table-cell;
+      padding: 80px 90px;
+      padding-bottom: 88px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 32px;
+      border-bottom: 1px solid #e5e5e5;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .input-style-2 {
+      padding: 9px 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff !important;
+    }
+
+    input {
+      outline: none;
+      background: #3667a7;
+      margin: 0;
+      border: none;
+      box-shadow: none;
+      width: 100%;
+      color: #fff !important;
+    }
+
+    ::placeholder {
+      color: #fff !important;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    form .row-space {
+      justify-content: space-between;
+    }
+
+    form .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col-2 {
+      min-width: 50%;
+      margin: 0;
+      padding-left: 8px;
+    }
+
+    .rs-select2 {
+      width: 100%;
+      outline: none;
+    }
+
+    .select2-container {
+      box-sizing: border-box;
+      display: inline-block;
+      margin: 0;
+      position: relative;
+      vertical-align: middle;
+    }
+
+    .rs-select2 .select2-container .select2-selection {
+      outline: none;
+      border: none;
+      height: 36px;
+    }
+
+    .select2-selection-single {
+      background-color: #3667a7;
+    }
+
+    .select2-container .select2-selection-single {
+      box-sizing: border-box;
+      cursor: pointer;
+      display: block;
+      height: 28px;
+      color: #fff;
+      text-transform: uppercase;
+      border: none;
+    }
+
+    option .appointment-title {
+      display: block;
+      color: #fff;
+      padding-right: 20px;
+      padding-left: 8px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .btn-submit {
+      text-transform: uppercase;
+      color: #494949;
+      background: #fff;
+      font-weight: 100;
+      padding: 20px;
+      border-radius: 6px;
+      display: inline-block;
+      transition: all 0.3s ease 0s;
+    }
+    .btn-submit:hover {
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 3px;
+      background: #494949;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+      transition: all 0.3s ease 0s;
     }
   }
   
-  .appointment {
-    background: $brightBlue;
-    height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    &:hover {
-      background-color: $royalBlue;
-      transition: all 0.5s;
-    }
-  }
-  .appointment a {
-    text-transform: uppercase !important;
-    color: $white;
-    padding-left: 20px;
-    padding-right: 20px;
-    letter-spacing: 2px;
-    &:hover {
-      text-decoration: none;
-      background-color: $royalBlue;
-      transition: all 0.5s;
-    }
-  }
-}
